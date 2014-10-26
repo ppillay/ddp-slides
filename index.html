@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Iris Dataset Tool</title>
+  <meta charset="utf-8">
+  <meta name="description" content="The Iris Dataset Tool">
+  <meta name="author" content="Prabha Pillay">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>The Iris Dataset Tool</h1>
+    <h2>(and why you should check it out)</h2>
+    <p>Prabha Pillay<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Two names are associated with this famous dataset: Edgar Anderson, who collected the measurements of three related species of the iris flower, and Sir Ronald Fisher, who in 1936, introduced the multivariate dataset as an example of linear discriminant analysis.</p>
+
+<p>The data set consists of 50 samples from each of three species of Iris (setosa, virginica and versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres.</p>
+
+<p><img src = 'iris_petal_sepal.png' height='300' width='300'></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Examining the data</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The Iris Dataset Tool is available <a href="http://ppillay.shinyapps.io/shinyProj/">here</a>.</p>
+
+<p>On starting up the tool set, the user is presented with a <em>Welcome</em> screen. Various approaches are provided for studying the original dataset:</p>
+
+<ul>
+<li>A histogram of each measurement, selected from a dropdown and displayed on the <em>Histogram</em> tab</li>
+<li>A statistical summary of each measurement, selected with the same dropdown and displayed on the <em>Summary</em> tab</li>
+<li>A couple of plots are presented of petal width vs length, and sepal width vs length, displayed on the <em>Plot</em> tab</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Plot data</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The sepal width vs length plot is reproduced here:</p>
+
+<p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Predicting new iris specimens</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Departing from Fisher&#39;s original work, this tool contains a predictive model built using the random forests approach. The user can adjust the sliders in the sidebar to describe a new iris specimen and the the Prediction tab will display the suggested iris category.</p>
+
+<p>Revewers can test the model by using the graphs from the Plot tab to suggest a set of measurements and the expected iris species.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Examining the data'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Plot data'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Predicting new iris specimens'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
